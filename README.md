@@ -24,7 +24,7 @@ Note: To successfully train the model and generate a classified output, opted fo
 
 7) Output Visualization and Export: The final classified image is visualized, with forest areas displayed in green and non-forest areas in red. The classified image is exported as a GeoTIFF file, preserving georeferencing information.
 
-8) Basic frontend  using Streamlit for visualizing: "Forest and non-forest classified output" and "NDVI" images overlaid on Openstreet map (OSM) map interface. This can be visualized in jupyter-notebook or by using anaconda prompt and running "streamlit run mystreamlit_app.py"
+8) Basic frontend  using Streamlit for visualizing: "Forest and non-forest classified output" image overlaid on Openstreet map (OSM) map interface. This can be visualized in jupyter-notebook or by using anaconda prompt and running "streamlit run mystreamlit_app.py"
 
 
 # To run the code:
@@ -33,4 +33,4 @@ Note: To successfully train the model and generate a classified output, opted fo
 3) Rest run the jupyter-notebook code.
 4) To view myStreamlitapp.py, open an Anaconda prompt cmd,
       - set the environment name " conda activate -env_name" and
-      - Type "streamlit run myStreamlitapp.py" then click on the local/8080 and webpage with webmap with "Forest and non-forest classified output" and "NDVI" images overlaid on Openstreet map (OSM) map interface will be displayed. 
+      - Type "streamlit run myStreamlitapp.py" then click on the local/8080 and webpage with webmap with "Forest and non-forest classified output"  image overlaid on Openstreet map (OSM) map interface will be displayed. 
