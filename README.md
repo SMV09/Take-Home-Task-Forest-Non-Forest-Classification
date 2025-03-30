@@ -5,7 +5,7 @@ This project implements a Convolutional Neural Network (CNN) for automated fores
 Workflow:
 
 1) Automated Image Input detection:
-   The system automatically scans the input folder for satellite images (e.g., Landsat GeoTIFFs).
+   The system automatically scans the "input folder" for satellite images (e.g., Landsat GeoTIFFs).
 
 2) Preprocessing:
    1) Band Selection: Relevant spectral bands are selected for the classification task.
@@ -25,3 +25,12 @@ Workflow:
 8) Output Visualization and Export: The final classified image is visualized, with forest areas displayed in green and non-forest areas in red. The classified image is exported as a GeoTIFF file, preserving georeferencing information.
 
 9) Basic frontend  using Streamlit for visualizing: "Forest and non-forest classified output" and "NDVI" images overlaid on Openstreet map (OSM) map interface. This can be visualized in jupyter-notebook or by using anaconda prompt and running "streamlit run mystreamlit_app.py"
+
+
+# To run the code:
+1) Download and open the "Forest & Non-Forest Classification_Final.ipynb" in jupyter-notebook and zipped "Landsat", which is input folder.
+2) Modify the 'input folder' path to point to a directory with new Landsat images from different time intervals. For example: Change the code script with this pathname, 'input_folder = "D:/Landsat"'
+3) Rest run the jupyter-notebook code.
+4) To view myStreamlitapp.py, open an Anaconda prompt cmd,
+      - set the environment name " conda activate -env_name" and
+      - Type "streamlit run myStreamlitapp.py" then click on the local/8080 and webpage with webmap with "Forest and non-forest classified output" and "NDVI" images overlaid on Openstreet map (OSM) map interface will be displayed. 
