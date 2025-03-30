@@ -17,7 +17,7 @@ Workflow:
    A CNN model is trained using the preprocessed satellite image bands as input features and the NDVI-derived forest/non-forest mask as training labels.
     The trained CNN model is applied to the input satellite images to generate a refined forest/non-forest classification.
 
-Note: To successfully train the model and generate a classified output, opted for the original Landsat imagery as it provided a dataset free of null values. The masked Landsat images, which contained null values, were found to interfere with the model's processing, causing errors.
+Note: To successfully train the model and generate a classified output, opted for the original Landsat imagery as it provided a dataset free of null values. The cloud masked Landsat images, which contained null values, were found to interfere with the model's processing, causing errors.
 
 6) Batch processing (works efficiently on large raster data):
     The batch_predict function efficiently processes large images for machine learning prediction by dividing them into smaller, manageable batches. It first flattens the image into pixel features, then iterates through these batches, using a provided model to predict class labels. The results are stored and finally reshaped back into the original image dimensions, providing a pixel-wise classification output. This method is particularly useful for handling memory constraints when dealing with high-resolution or large raster data.
