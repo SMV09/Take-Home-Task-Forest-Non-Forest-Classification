@@ -16,15 +16,14 @@ Workflow:
 4) CNN-Based Classification:
    A CNN model is trained using the preprocessed satellite image bands as input features and the NDVI-derived forest/non-forest mask as training labels.
     The trained CNN model is applied to the input satellite images to generate a refined forest/non-forest classification.
+#Note: To successfully train the model and generate a classified output, opted for the original Landsat imagery as it provided a dataset free of null values. The masked Landsat images, which contained null values, were found to interfere with the model's processing, causing errors.
 
-5) Batch processing (works efficiently on large raster data):
+6) Batch processing (works efficiently on large raster data):
     The batch_predict function efficiently processes large images for machine learning prediction by dividing them into smaller, manageable batches. It first flattens the image into pixel features, then iterates through these batches, using a provided model to predict class labels. The results are stored and finally reshaped back into the original image dimensions, providing a pixel-wise classification output. This method is particularly useful for handling memory constraints when dealing with high-resolution or large raster data.
 
-7) Model accuracy is checked:
+7) Output Visualization and Export: The final classified image is visualized, with forest areas displayed in green and non-forest areas in red. The classified image is exported as a GeoTIFF file, preserving georeferencing information.
 
-8) Output Visualization and Export: The final classified image is visualized, with forest areas displayed in green and non-forest areas in red. The classified image is exported as a GeoTIFF file, preserving georeferencing information.
-
-9) Basic frontend  using Streamlit for visualizing: "Forest and non-forest classified output" and "NDVI" images overlaid on Openstreet map (OSM) map interface. This can be visualized in jupyter-notebook or by using anaconda prompt and running "streamlit run mystreamlit_app.py"
+8) Basic frontend  using Streamlit for visualizing: "Forest and non-forest classified output" and "NDVI" images overlaid on Openstreet map (OSM) map interface. This can be visualized in jupyter-notebook or by using anaconda prompt and running "streamlit run mystreamlit_app.py"
 
 
 # To run the code:
