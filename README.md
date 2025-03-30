@@ -24,4 +24,4 @@ Workflow:
 
 8) Output Visualization and Export: The final classified image is visualized, with forest areas displayed in green and non-forest areas in red. The classified image is exported as a GeoTIFF file, preserving georeferencing information.
 
-9) Basic frontend  using Streamlit for visualizing "Forest and non-forest classified output" and "NDVI" images overlaid on Openstreet map (OSM) map interface. This can be visualized in jupyter-notebbok or by using anaconda prompt and running "streamlit run mystreamlit_app.py"
+9) Basic frontend  using Streamlit for visualizing: "Forest and non-forest classified output" and "NDVI" images overlaid on Openstreet map (OSM) map interface. This can be visualized in jupyter-notebook or by using anaconda prompt and running "streamlit run mystreamlit_app.py"
